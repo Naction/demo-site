@@ -1,0 +1,52 @@
+header{
+    display: flex;
+    height: 70px;
+    background-color:#356A96 ;
+    color: white;
+    vertical-align: center;
+    line-height: 70px;
+    padding: 0 20px;
+}
+.br{
+    flex: 1;
+}
+
+.header-right ul{
+    display: flex;
+    text-decoration: none;
+}
+
+
+.header-right ul li{
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+.header-right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.top{
+    background-image: url(img/image1.png);
+    background-size: cover;
+    height: 500px;
+
+}
+.container{
+
+}
+h1{
+    text-align: center;
+}
+.row{
+    justify-content: center;
+}
+.news{
+    height: 400px;
+    border: solid 1px black;
+}
+footer{
+    background-color: blue;
+    height: 400px;
+}

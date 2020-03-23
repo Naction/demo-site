@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header fixed-top ">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#webskill">SKILLS</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</div>
+	<div class="img">
+		<h2 class=>My name is Naction</h2>
+		<p class=>(who's learning)Web design & programing</p>
+	</div>
+	<div class="container">
+		<div class="row about fadein" id="about">
+			<div class="col-md-6">
+				<img src="https://picsum.photos/400/300">
+			</div>
+			<div class="col-md-6 ">
+				<h2>About me</h2>
+				<p>Naction(なくしょん)　1994年生まれ　和歌山県出身　</p>
+				<p>富山大学芸術文化学部卒業</p>
+				<p>世界遺産の街新宮市で観光業務を行いながら、副業でアナウンサーの仕事を行う。</p>
+				<p>多くの外国人観光客と接するうちに海外への興味が増し、セブ島にエンジニア留学を決意</p>
+				<p>フリーランスエンジニアとして生計をたてるべく、日々奮闘中</p>
+				<p>follow me!<a href="https://twitter.com/search?q=13naction&src=typd"><i class="fab fa-twitter fa-2x"></i></a><a href="https://www.instagram.com/13naction/?hl=ja"><i class="fab fa-instagram fa-2x"></i></a></p>
+			</div>
+		</div>
+	</div>
+	<div class="webskill fadein" id="webskill">
+		<h2>Web Skills</h2>
+		<div class="row">
+			<div class="col-md-3 content ">
+				<h2>HTML&CSS</h2>
+				<i class="fas fa-code fa-5x"></i>
+				<p>簡単なホームページ制作ができます。シンプルなデザインを得意とします。</p>
+			</div>
+			<div class="col-md-3 content">
+				<h2>Javascript</h2>
+				<i class="fab fa-js fa-5x"></i>
+				<p>簡単なプログラミングでwebアプリの制作ができます。現在学習中です。</p>
+			</div>
+			<div class="col-md-3 content">
+				<h2>PHP</h2>
+				<i class="fab fa-php fa-5x"></i>
+				<p>簡単なプログラミングでwebサービスを作ることができます。現在学習中です。</p>
+			</div>
+			<div class="col-md-3 content">
+				<h2>WordPress</h2>
+				<i class="fab fa-wordpress fa-5x"></i>
+				<p>ブログ形式のウェブサイトの構築ができます。自身でテーマも作ることができ、自身のブログも運用しています。</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="other fadein">
+		<h2>Other Skills</h2>
+		<div class="row">
+			<div class="col-sm-6 content">
+				<h2>Music</h2>
+				<i class="fas fa-compact-disc fa-5x"></i>
+				<p>作曲をすることができ、雰囲気にあったおしゃれな楽曲を作ることができます</p>
+			</div>
+			<div class="col-sm-6 content">
+				<h2>Movie</h2>
+				<i class="fas fa-video fa-5x"></i>
+				<p>ミュージックビデオやプロモーションビデオ等の動画制作をすることができます。ザ・おめでたズのMVのディレクターをした実績があります。</p>
+			</div>
+		</div>
+	</div>
+	<div class="contact fadein" id="contact">
+		<h2>Contact</h2>
+		<p>SNSでもお問い合わせいただけます。</p>
+		<a href="https://twitter.com/search?q=13naction&src=typd"><i class="fab fa-twitter fa-3x"></i></a><a href="https://www.instagram.com/13naction/?hl=ja"><i class="fab fa-instagram fa-3x"></i></a>
+		
+
+		<div class="form">
+    <form action="mail.php" method="post">
+      <input type="text" name="お名前"  placeholder="Your Name">
+      <input type="mail" name="Email"  placeholder="Your Email">
+      <input type="text" name="題目"  placeholder="Subject">
+      <textarea name="お問い合わせ内容" rows="5" cols="30" placeholder="messages..."></textarea>
+      <input type="submit" value="submit" class="btn btn-info "></input>
+    </form>
+  </div>
+		
+	</div>
+	<div class="footer">
+		<p>©2019/Naction/All Right Reserved</p>
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	 $(window).scroll(function (){
+    $('.fadein').each(function(){
+        var elemPos = $(this).offset().top,
+            scroll = $(window).scrollTop(),
+            windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight + 100){
+              $(this).addClass('scrollin');
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
