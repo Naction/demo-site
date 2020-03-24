@@ -31,22 +31,54 @@ header{
     background-image: url(img/image1.png);
     background-size: cover;
     height: 500px;
-
+    padding-top: 70px;
+}
+.top h2{
+    color: white;
+    padding-top: 50px;
 }
 .container{
 
 }
 h1{
     text-align: center;
+    margin: 50px 0;
 }
 .row{
     justify-content: center;
 }
 .news{
-    height: 400px;
+    height: 300px;
     border: solid 1px black;
 }
-footer{
-    background-color: blue;
+.contents{
     height: 400px;
+    background-color:#F0F0F0 ;
+    margin: 50px 0;
+}
+.footer-img{
+    background-image: url('https://picsum.photos/1900/620');
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    padding-top: 70px;
+}
+footer{
+    display: flex;
+    border: black solid 1px;
+    height: 200px;
+}
+.footer-right ul li{
+    list-style: none;
+    
+}
+.footer-right ul li a{
+
+    text-decoration: none;
+    color: black;
+}
+input{
+    width: 100%;
 }
