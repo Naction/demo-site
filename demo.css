@@ -7,6 +7,11 @@ header{
     line-height: 70px;
     padding: 0 20px;
 }
+.header i{
+    margin: auto;
+    display: none;
+
+}
 .br{
     flex: 1;
 }
@@ -37,6 +42,13 @@ header{
     color: white;
     padding-top: 50px;
 }
+.top p{
+    color: white;
+}
+
+.top-text{
+    margin: 50px;
+}
 .container{
 
 }
@@ -52,10 +64,24 @@ h1{
     border: solid 1px black;
 }
 .contents{
-    height: 400px;
+    height: 300px;
     background-color:#F0F0F0 ;
     margin: 50px 0;
 }
+.contents h2{
+    text-align: center;
+    margin: 20px;
+}
+.contents p{
+    margin: 40px;
+}
+.contents img{
+    max-width: 100%;
+}
+.contact{
+    margin-bottom: 50px;
+}
+
 .footer-img{
     background-image: url('https://picsum.photos/1900/620');
     background-size: cover;
@@ -67,11 +93,18 @@ h1{
 }
 footer{
     display: flex;
-    border: black solid 1px;
+
     height: 200px;
+    padding: 50px;
+}
+.footer-right ul{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .footer-right ul li{
     list-style: none;
+    padding: 20px ;
     
 }
 .footer-right ul li a{
@@ -82,3 +115,18 @@ footer{
 input{
     width: 100%;
 }
+
+
+@media screen and (max-width:900px) { 
+    .header-right{
+        display: none;
+    }
+    .header i{
+        display: block;
+    }
+  }
+  @media screen and (max-width:720px) { 
+    .contents{
+        margin: 0;
+    }
+  }
