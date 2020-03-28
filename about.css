@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    height: 70px;
+    background-color:#356A96 ;
+    color: white;
+    vertical-align: center;
+    line-height: 70px;
+    padding: 0 20px;
+}
+.header i{
+    margin: auto;
+    display: none;
+
+}
+.br{
+    flex: 1;
+}
+
+.header-right ul{
+    display: flex;
+    text-decoration: none;
+}
+
+
+.header-right ul li{
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+.header-right ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about{
+    display: flex;
+    margin-top: 50px;
+}
+
+th{
+    vertical-align: baseline;
+    margin: 20px;
+
+}
